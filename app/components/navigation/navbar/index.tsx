@@ -7,7 +7,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
     const pathname = usePathname()
 
     return (<>
-        <div className="w-full h-24 px-4 sm:px-16 bg-white sticky top-0 flex justify-between items-center font-[family-name:var(--font-ubuntu)] z-50">
+        <div className="w-full h-14 md:h-24 px-4 sm:px-16 bg-white sticky top-0 flex justify-between items-center font-[family-name:var(--font-ubuntu)] z-50">
 
             <ul className="flex items-center">
                 <li>
