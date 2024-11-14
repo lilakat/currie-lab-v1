@@ -46,19 +46,19 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
 
             <ul className="hidden md:flex gap-x-8 text-sky-900 text-lg font-light">
                 <li>
-                    <Link href="/" className={`link ${pathname === '/' ? 'active' : ''} [&.active]:underline underline-offset-4 hover:text-emerald-500`}>About</Link>
+                    <Link href="/" className={`link ${pathname === '/' ? 'active' : ''} [&.active]:underline underline-offset-4 hover:text-emerald-600`}>About</Link>
                 </li>
                 <li>
-                    <Link href="/people" className={`link ${pathname === '/people' ? 'active' : ''} [&.active]:underline underline-offset-4 hover:text-emerald-500`}>People</Link>
+                    <Link href="/people" className={`link ${pathname === '/people' ? 'active' : ''} [&.active]:underline underline-offset-4 hover:text-emerald-600`}>People</Link>
                 </li>
                 <li>
-                    <Link href="/publications" className={`link ${pathname === '/publications' ? 'active' : ''} [&.active]:underline underline-offset-4 hover:text-emerald-500`}>Publications</Link>
+                    <Link href="/publications" className={`link ${pathname === '/publications' ? 'active' : ''} [&.active]:underline underline-offset-4 hover:text-emerald-600`}>Publications</Link>
                 </li>
                 <li>
-                    <Link href="/gallery" className={`link ${pathname === '/gallery' ? 'active' : ''} [&.active]:underline underline-offset-4 hover:text-emerald-500`}>Gallery</Link>
+                    <Link href="/gallery" className={`link ${pathname === '/gallery' ? 'active' : ''} [&.active]:underline underline-offset-4 hover:text-emerald-600`}>Gallery</Link>
                 </li>
                 <li>
-                    <Link href="/contact" className={`link ${pathname === '/contact' ? 'active' : ''} [&.active]:underline underline-offset-4 hover:text-emerald-500`}>Get in touch</Link>
+                    <Link href="/contact" className={`link ${pathname === '/contact' ? 'active' : ''} [&.active]:underline underline-offset-4 hover:text-emerald-600`}>Get in touch</Link>
                 </li>
             </ul>
         </div>
