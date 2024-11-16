@@ -4,7 +4,7 @@ export default function Home() {
     return (
         <>
             <div className="text-black font-[family-name:var(--font-raleway)]">
-                <div className="relative w-full h-[20vh] sm:h-[35vh] flex justify-center overflow-hidden">
+                <div className="relative w-full h-[20vh] sm:h-[32vh] flex justify-center overflow-hidden">
                     <Image
                         src="/images/scene1Top.png"
                         alt=""
@@ -14,14 +14,14 @@ export default function Home() {
                     />
                 </div>
 
-                <div className="flex flex-col justify-center items-center h-[50vh] sm:h-[24vh] text-center md:px-24">
-                    <h1 className="text-2xl sm:text-4xl pb-8">Welcome to the Currie Lab!</h1>
-                    <p className="sm:text-xl px-2 md:px-44">
+                <div className="flex flex-col justify-center items-center h-[50vh] lg:h-[30vh] text-center md:px-24">
+                    <h1 className="text-2xl md:text-3xl lg:text-4xl pb-8">Welcome to the Currie Lab!</h1>
+                    <p className="text-small md:text-lg lg:text-xl px-2 lg:px-44">
                         We seek to understand the mechanisms that govern genome organization, epigenetic gene regulation, and genome stability in health and disease. We combine structural biology, biochemistry, and cellular model systems.
                     </p>
                 </div>
 
-                <div className="relative w-full h-[20vh] sm:h-[34vh] flex justify-center overflow-hidden">
+                <div className="relative w-full h-[20vh] sm:h-[32vh] flex justify-center overflow-hidden">
                     <Image
                         src="/images/scene1Bottom.png"
                         alt=""
