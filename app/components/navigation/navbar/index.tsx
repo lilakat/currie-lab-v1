@@ -1,34 +1,24 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const Navbar = ({ toggle }: { toggle: () => void }) => {
     const pathname = usePathname()
 
     return (<>
-        <div className="w-full h-14 md:h-24 px-4 sm:px-16 bg-white sticky top-0 flex justify-between items-center font-[family-name:var(--font-ubuntu)] z-50">
+        <div className="w-full h-14 px-6 md:px-24 lg:px-40 bg-white sticky top-0 flex justify-between items-center tracking-wide font-[family-name:var(--font-dmSans)] z-50">
 
             <ul className="flex items-center">
                 <li>
-                    <Link href="/" className="hidden md:flex pr-3 pb-2">
-                        <Image
-                            src="/images/UTMlogo.svg"
-                            alt="Logo"
-                            width="130"
-                            height="74"
-                            className="relative"
-                        />
-                    </Link>
                 </li>
-                <li>
-                    <Link href="/" className="text-xl sm:text-3xl md:border-l border-gray-400 pl-3 text-normal text-emerald-900">CURRIE LAB</Link>
+                <li className="">
+                    <Link href="/" className="text-xl sm:text-xl text-zinc-900 font-bold">THE CURRIE LAB</Link>
                 </li>
             </ul>
 
             <button
                 type="button"
-                className="inline-flex items-center md:hidden"
+                className="inline-flex items-center lg:hidden"
                 onClick={toggle}
             >
                 <svg
@@ -38,32 +28,31 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                     viewBox="0 0 24 24"
                 >
                     <path
-                        fill="#233876"
+                        fill="#000000"
                         d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"
                     />
                 </svg>
             </button>
 
-            <ul className="hidden md:flex gap-x-8 text-sky-900 text-lg font-light">
+            <ul className="hidden lg:flex text-black text-base font-extralight uppercase">
                 <li>
-                    <Link href="/" className={`link ${pathname === '/' ? 'active' : ''} [&.active]:underline underline-offset-4 hover:text-emerald-600`}>About</Link>
+                    <Link href="/" className={`link ${pathname === '/' ? 'active' : ''} [&.active]:font-normal hover:bg-emerald-700 hover:text-white px-4 pb-2 pt-3`}>About</Link>
                 </li>
                 <li>
-                    <Link href="/people" className={`link ${pathname === '/people' ? 'active' : ''} [&.active]:underline underline-offset-4 hover:text-emerald-600`}>People</Link>
+                    <Link href="/people" className={`link ${pathname === '/people' ? 'active' : ''} [&.active]:font-normal hover:bg-emerald-700 hover:text-white px-4 pb-2 pt-3`}>People</Link>
                 </li>
                 <li>
-                    <Link href="/publications" className={`link ${pathname === '/publications' ? 'active' : ''} [&.active]:underline underline-offset-4 hover:text-emerald-600`}>Publications</Link>
+                    <Link href="/publications" className={`link ${pathname === '/publications' ? 'active' : ''} [&.active]:font-normal hover:bg-emerald-700 hover:text-white px-4 pb-2 pt-3`}>Publications</Link>
                 </li>
                 <li>
-                    <Link href="/gallery" className={`link ${pathname === '/gallery' ? 'active' : ''} [&.active]:underline underline-offset-4 hover:text-emerald-600`}>Gallery</Link>
+                    <Link href="/gallery" className={`link ${pathname === '/gallery' ? 'active' : ''} [&.active]:font-normal hover:bg-emerald-700 hover:text-white px-4 pb-2 pt-3`}>Gallery</Link>
                 </li>
                 <li>
-                    <Link href="/contact" className={`link ${pathname === '/contact' ? 'active' : ''} [&.active]:underline underline-offset-4 hover:text-emerald-600`}>Get in touch</Link>
+                    <Link href="/contact" className={`link ${pathname === '/contact' ? 'active' : ''} [&.active]:font-normal hover:bg-emerald-700 hover:text-white px-4 pb-2 pt-3`}>Get in touch</Link>
                 </li>
             </ul>
         </div>
-    </>
-    );
+    </>);
 };
 
 export default Navbar;
