@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Ubuntu, Lato, Roboto, Merriweather, Open_Sans, Montserrat, Nunito, Playfair_Display, Source_Serif_4, Source_Sans_3, Poppins, Raleway } from "next/font/google";
+import { Ubuntu, Lato, Roboto, Merriweather, Open_Sans, Montserrat, Nunito, Playfair_Display, Source_Serif_4, Source_Sans_3, Poppins, Raleway, Josefin_Sans, DM_Sans } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/navigation";
 import Footer from "./components/navigation/footer"
@@ -14,6 +14,18 @@ const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
+});
+
+const josefinSans = Josefin_Sans({
+  weight: ["300", "400", "700"], // Regular for headers, Bold for emphasis
+  variable: "--font-josefinSans",
+  subsets: ["latin"],
+});
+
+const dmSans = DM_Sans({
+  weight: ["200", "300", "400", "700"], // Regular for headers, Bold for emphasis
+  variable: "--font-dmSans",
+  subsets: ["latin"],
 });
 
 const ubuntu = Ubuntu({
@@ -104,7 +116,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} ${ubuntu.variable} ${lato.variable} ${roboto.variable} ${merriweather.variable} ${openSans.variable} ${montserrat.variable} ${nunito.variable} ${playfairDisplay.variable} ${sourceSansPro.variable} ${sourceSerifPro.variable} ${poppins.variable} ${raleway.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${ubuntu.variable} ${lato.variable} ${roboto.variable} ${merriweather.variable} ${openSans.variable} ${montserrat.variable} ${nunito.variable} ${playfairDisplay.variable} ${sourceSansPro.variable} ${sourceSerifPro.variable} ${poppins.variable} ${raleway.variable} ${josefinSans.variable} ${dmSans.variable} antialiased`}>
         <div className="flex flex-col min-h-screen">
             <Navigation />
             <div className="flex-grow flex-row max-w-full overflow-auto">
